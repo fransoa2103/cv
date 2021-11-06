@@ -1,0 +1,13 @@
+
+.f_letter, .clipart {
+    max-width:  320px;
+}
+.ligne {
+    height:     10px;
+}
+.name {
+    height: 250px;
+}
+@media screen and (min-width: 560px) {
+
+}
