@@ -49,33 +49,33 @@ $db = [
                         'level'     =>'Assimilé.',
                         'note'      =>'100'
                     ],
-                    [   'name'      =>'SASS',
-                        'icon'      =>'fab fa-sass',
-                        'level'     =>'Bases assimilées.',
-                        'note'      =>'50'
-                    ],
                     [   'name'      =>'JS',
                         'icon'      =>'fab fa-js',
                         'level'     =>'Bases assimilées.',
                         'note'      =>'50'
                     ]
                 ],    
-            'frameworks' =>
+            'frameworks & Librairies' =>
                 [
                     [   'name'      =>'SYMFONY',
                         'icon'      =>'fab fa-symfony',
                         'level'     =>'Bientôt...',
-                        'note'      =>'0'
+                        'note'      =>'25'
                     ],
                     [   'name'      =>'REACT',
                         'icon'      =>'fab fa-react',
                         'level'     =>'Plus tard...',
-                        'note'      =>'0'
+                        'note'      =>'25'
                     ],
                     [   'name'      =>'BOOTSTRAP',
                         'icon'      =>'fab fa-bootstrap',
                         'level'     =>'Bases assimilées.',
                         'note'      =>'75'
+                ],
+                    [   'name'      =>'SASS',
+                        'icon'      =>'fab fa-sass',
+                        'level'     =>'Bases assimilées.',
+                        'note'      =>'50'
                     ]
                 ],
             'gestionnaire versions' =>
@@ -126,9 +126,20 @@ $db = [
                 'libelle'   => 'Passionné de musiques, tous styles et pratique la guitare occasionnellement.',
             ],
             [   'icon'      => 'fas fa-running',
-                'libelle'   => 'Pratique hebdomadaire de la cap, du trail, du badminton en club et ski l\'hiver!'
+                'libelle'   => 'Pratique hebdomadaire de la course à pied, trail ou rando, du badminton en club et un peu de ski l\'hiver!'
+            ]
+        ],
+        'liens' =>  [
+            [   'icon'      => 'fab fa-github',
+                'link'      => 'https://github.com/fransoa2103'
+            ],
+            [   'icon'      => 'fas fa-user-check',
+                'link'      => 'https://fransoa2103.github.io/portfolio/',
+            ],
+            [   'icon'      => 'fab fa-linkedin',
+                'link'      => 'https://www.linkedin.com/in/fran%C3%A7ois-couv%C3%A9-bonnaire-144bb3212/'
             ]
         ]
     ];
-
+// #fd7e14
 ?>

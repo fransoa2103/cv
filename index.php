@@ -14,10 +14,10 @@
         <title>CV ~ François Couvé-Bonnaire</title>
         <link rel="icon" href="public\img\thumb.svg"/>
     </head>
-    <body class="">
-        <main class="bg-light text-light">
+    <body>
+        <main class="container d-lg-flex">
             <!-- LEFT SECTION -->
-            <section class="bg-primary d-flex flex-column justify-content-between">
+            <section class="left bg-primary  text-light d-flex flex-column justify-content-between">
                 <!-- F-LETTER -->
                 <div class="">
                     <div class="ligne mt-3 pt-2 bg-light mx-3"></div>
@@ -40,12 +40,10 @@
                         Mes expériences profesionnelles hors "Dev" vous garantissent de m'acclimater, comprendre et évoluer rapidement.
                     </p>
                 </div>
-
                 <!-- CLIP-ART -->
-                <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="blank" class="my-5">
-                    <div class="bg-light mx-1 rounded" ><img src="public\img\clip-art.png" class="clipart"></div>
+                <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="blank" class="my-5 text-center">
+                    <div class="bg-light mx-1 rounded " ><img src="public\img\clip-art.png" class="clipart"></div>
                 </a>
-                
                 <!-- ADRESS -->
                 <address title="adresse" class="mx-4 fs-5" >
                     <div class="py-1">
@@ -63,10 +61,36 @@
                 </address>
             </section>
             <!-- RIGHT SECTION -->
-            <section class="">
+            <hr class="d-lg-none border border-primary">
+            <section class="right">
+                <!-- TECHNOS -->
+                    <ul class="list-group mb-2  text-dark" >
+                        <li class="list-group-item active ">
+                            <i class="ms-2 fs-3 fab fa-dev"></i>
+                            <span class="ms-2">TECHNOS</span>
+                        </li>
+                        <div class="techno">
+                            <?php
+                            foreach($db['technos'] as $key => $techno){
+                                echo "<i class='ms-2 text-capitalize'>".$key."</i>";
+                                echo "<li class='ms-2 list-group-item'>";
+                                    foreach($db['technos'][$key] as $detail){
+                                        echo
+                                        "<i class='".$detail['icon']."'></i>
+                                        <span class='ms-2  fw-bolder'>".$detail['name']."</span>
+                                        <div class='align-items-center'>
+                                            <span class='progress progress-bar' role='progressbar' style='width: ".$detail['note']."%;'>
+                                                <span class='ms-2 text-start'>".$detail['level']."</span>
+                                            </span>
+                                        </div>";
+                                    }
+                                echo "</li>";
+                            }    
+                            ?>
+                        </div>
+                    </ul>
                 <!-- STUDY -->
-                <div class="">
-                    <ul class="list-group fs-6">
+                    <ul class="list-group ">
                         <li class="list-group-item active">
                             <i class="ms-2 fas fa-user-graduate"></i>
                             <span class="ms-2">FORMATIONS</span>
@@ -76,42 +100,15 @@
                             echo
                             "<li class=' list-group-item border-light '>
                                 <i class='fas fa-caret-right'></i>
-                                <span class='text-dark'>".$formation['annee']."</span></br>
-                                <span class='text-dark fw-bolder ms-2'>".$formation['diplome']."</span>
-                                </br><span class='text-dark ms-2'>".$formation['firme']."</span>
-                                </br><span class='text-dark ms-2'>".$formation['lieu']."</span>
+                                <span class=''>".$formation['annee']."</span></br>
+                                <span class=' fw-bolder ms-2'>".$formation['diplome']."</span>
+                                </br><span class=' ms-2'>".$formation['firme']."</span>
+                                </br><span class=' ms-2'>".$formation['lieu']."</span>
                             </li>";
                         }?>
                     </ul>
-                </div>
-                <!-- TECHNOS -->
-                <div class="">
-                    <ul class="list-group fs-6 mb-2 text-dark" >
-                        <li class="list-group-item active ">
-                            <i class="ms-2 fs-3 fab fa-dev"></i>
-                            <span class="ms-2">TECHNOS</span>
-                        </li>
-                            <?php
-                            foreach($db['technos'] as $key => $techno){
-                                echo "<i class='ps-2 text-capitalize'>".$key."</i>";
-                                echo "<li class='list-group-item'>";
-                                    foreach($db['technos'][$key] as $detail){
-                                        echo
-                                        "<div class='my-1 d-flex flex-wrap align-items-center'>
-                                            <i class='".$detail['icon']."'></i>
-                                            <span class='ms-2 text-dark fw-bolder'>".$detail['name']."</span>
-                                            <span class='ms-2 fs-6 text-dark'>".$detail['level']."</span>
-                                            <span class='progress progress-bar bg-secondary' role='progressbar' style='width: ".$detail['note']."%;'></span>
-                                        </div>";
-                                    }
-                                echo "</li>";
-                            }    
-                            ?>
-                    </ul>
-                </div>
                 <!-- EXPERIENCES -->
-                <div class="">
-                    <ul class="list-group fs-6">
+                    <ul class="list-group">
                         <li class="list-group-item active fw-bold">
                             <i class="ms-2 fas fa-user-tie"></i>
                             <span class="ms-2">EXPERIENCES</span>
@@ -121,18 +118,16 @@
                             echo
                             "<li class=' list-group-item border-light'>
                                 <i class='fas fa-caret-right'></i>
-                                <span class='text-dark'>".$experience['annee']."</span>
-                                </br><span class='text-dark fw-bolder ms-2 text-uppercase'>".$experience['poste']."</span>
-                                </br><span class='text-dark ms-2'>".$experience['firme']."</span>
-                                </br><span class='text-dark ms-2'>".$experience['lieu']."</span>
+                                <span class=''>".$experience['annee']."</span>
+                                </br><span class=' fw-bolder ms-2 text-uppercase'>".$experience['poste']."</span>
+                                </br><span class=' ms-2'>".$experience['firme']."</span>
+                                </br><span class=' ms-2'>".$experience['lieu']."</span>
                             </li>";
                         }?>
                     </ul>
-                </div>
                 <!-- VIE PRIVEE -->
-                <div class="">
-                    <ul class="list-group fs-6">
-                    <li class="list-group-item active fw-bold">
+                    <ul class="list-group">
+                        <li class="list-group-item active fw-bold">
                             <i class="ms-2 fas fa-home"></i>
                             <span class="ms-2 text-uppercase">vie privée</span>
                         </li>
@@ -141,11 +136,23 @@
                             echo
                             "<li class=' list-group-item border-light'>
                                 <i class='".$vie['icon']."'></i>
-                                <span class='ms-2 text-dark'>".$vie['libelle']."</span>
+                                <span class='ms-2 '>".$vie['libelle']."</span>
                             </li>";
-                        }?>
+                        }
+                        ?>
                     </ul>
-                </div>
+                
+                <!-- LIENS -->
+                <hr class="border border-primary">
+                <ul class="liens">
+                    <?php
+                    foreach($db['liens'] as $lien){
+                        echo
+                        "<a class='me-5' target='blank' href='".$lien['link']."'>
+                            <span class='".$lien['icon']."'></span>
+                        </a>";
+                    }?>
+                </ul>
             </section>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
