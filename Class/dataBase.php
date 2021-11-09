@@ -26,15 +26,15 @@ $db = [
         'technos' => [
                 'back' =>
                 [
-                        [   'name'      =>'PHP',
+                    [   'name'      =>'PHP',
                         'icon'      =>'fab fa-php',
                         'level'     =>'Bases assmilées + POO + MVC.',
                         'note'      =>'75'
                     ],
                     [   'name'      =>'MySQL',
-                    'icon'      =>'fas fa-database',
-                    'level'     =>'Bases assimilées + CRUD.',
-                    'note'      =>'50'
+                        'icon'      =>'fas fa-database',
+                        'level'     =>'Bases assimilées + CRUD.',
+                        'note'      =>'50'
                     ]
                 ],
                 'front' =>
