@@ -25,7 +25,7 @@ $db = [
 
         'technos' => [
                 'back' =>
-                [
+                [   ['title' =>'__BACK__'],
                     [   'name'      =>'PHP',
                         'icon'      =>'fab fa-php',
                         'level'     =>'Bases assmilées + POO + MVC.',
@@ -38,7 +38,7 @@ $db = [
                     ]
                 ],
                 'front' =>
-                [
+                [   ['title' =>'__FRONT__'],
                     [   'name'      =>'HTML',
                         'icon'      =>'fab fa-html5',
                         'level'     =>'Assimilé.',
@@ -56,22 +56,22 @@ $db = [
                     ]
                 ],    
             'frameworks & Librairies' =>
-                [
+                [   ['title' =>'__FRAMEWORKS & LIBRAIRIES__'],
                     [   'name'      =>'SYMFONY',
                         'icon'      =>'fab fa-symfony',
-                        'level'     =>'Bientôt...',
+                        'level'     =>'En cours...',
                         'note'      =>'25'
                     ],
-                    [   'name'      =>'REACT',
+                    [   'name'      =>'REACT + NODEJS',
                         'icon'      =>'fab fa-react',
-                        'level'     =>'Plus tard...',
+                        'level'     =>'Bientôt...',
                         'note'      =>'25'
                     ],
                     [   'name'      =>'BOOTSTRAP',
                         'icon'      =>'fab fa-bootstrap',
                         'level'     =>'Bases assimilées.',
                         'note'      =>'75'
-                ],
+                    ],
                     [   'name'      =>'SASS',
                         'icon'      =>'fab fa-sass',
                         'level'     =>'Bases assimilées.',
@@ -79,15 +79,15 @@ $db = [
                     ]
                 ],
             'gestionnaire versions' =>
-                [
-                    [   'name'      =>'GITHUB',
+                [   ['title' =>'__GESTIONNAIRE DE VERSIONS__'],
+                       ['name'      =>'GITHUB',
                         'icon'      =>'fab fa-github',
                         'level'     =>'Bases assimilées.',
                         'note'      =>'50'
                     ]
                 ],
             'CMS' =>
-                [
+                [   ['title' =>'__CMS__'],
                     [   'name'      =>'WORDPRESS',
                         'icon'      =>'fab fa-wordpress',
                         'level'     =>'Bases assimilées.',

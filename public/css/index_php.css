@@ -2,12 +2,15 @@
 td {
     padding: 0 1%;    
 }
+tr {
+    padding: 0;
+    margin: 0;
+}
 /* SECTION LEFT */
 .left {
-    background-color: burlywood;
     width: 30%;
 }
-ul {
+ul, li{
     list-style: none;
 }
 a {
@@ -36,7 +39,6 @@ a {
 /* SECTION RIGHT */
 
 .right {
-    background-color: chocolate;
     width: 70%;
     margin-left: 1%;
 }
@@ -47,14 +49,21 @@ hr {
 .progress {
     background-color: rgb(150, 150, 150);
     color: aliceblue;
+    font-size: 0.9em;
+    padding: 0.25em;
 
 }
-.right ul {
-    margin: 2% 0;
+div li {
+    margin-left: 40px;
 }
 .titre_uppercase {
     text-transform: uppercase;
 }
 .svg {
     width: 10px;
+}
+li.text_title {
+    font-weight: bold;
+    margin: 2% 0 0 1%;
+    font-style: italic;
 }

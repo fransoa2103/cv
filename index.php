@@ -30,29 +30,21 @@
                     </p>
                 </div>
                 <!-- ADRESS -->
-                <address class="adresse" >
-                    <span class="fas fa-phone-alt"></span>
+                <div class="adresse" >
                     <a class=""  href="tel: +33670920328" style="text-decoration: none;">0670920328</a></br>
-                    <span class="far fa-paper-plane"></span>
-                    <a href="mailto: fcbonnaire01@gmail.com" class="" target="blank" style="text-decoration: none;">fcbonnaire01@gmail.com</a></br>  
-                    <div class="adresse_2">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <p class=""> 150 rue Jean SIBUET</br>73460 SAINT-VITAL</p>
-                    </div>
-                </address>
+                    <a href="mailto: fcbonnaire01@gmail.com" class="" target="blank" style="text-decoration: none;">fcbonnaire01@gmail.com</a>  
+                    <p class=""> 150 rue Jean SIBUET</br>73460 SAINT-VITAL</p>
+                </div>
             </td>
             
             <td class="right">
-                <!-- TECHNOS -->
-                
                 <?php
-                    text0_cv('public\img\F_letter.svg','technos', 'technos'); 
-                    text0_cv('public\img\F_letter.svg','expériences', 'experiences'); 
-                    text0_cv('public\img\F_letter.svg','formations', 'formations');
-                    text0_cv('public\img\F_letter.svg','vie-privee', 'vie-privee');
+                    displayMyCV('public\img\F_letter.svg','formations');
+                    displayMyCV('public\img\F_letter.svg','technos'); 
+                    displayMyCV('public\img\F_letter.svg','experiences'); 
+                    displayMyCV('public\img\F_letter.svg','vie-privee');
                  ?>
             </td>
         </tr>
     </tbody>
 </table>
-        
