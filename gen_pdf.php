@@ -8,7 +8,7 @@ require_once './dompdf/autoload.inc.php';
 
 $dompdf     = new Dompdf(); // appel la Class création nouveau fichier.pdf
 $options    = new Options(); // appel la Class des options
-$options->set('defaultFont', 'courier');
+$options->set('defaultFont', 'arial');
 
 // Pour afficher les images dans le format pdf il m'a fallu chercher une solution, la voici:
 // j'ai supprimé des lignes de codes dans le fichier /dompdf/src/img/cache.php
@@ -16,9 +16,9 @@ $options->set('defaultFont', 'courier');
 
 $dompdf     = new Dompdf($options);
 
+
 ob_start();
 require_once 'index.php';
-// require_once 'page.php';
 $html = ob_get_contents();
 ob_end_clean();
 
