@@ -1,183 +1,183 @@
 <style>
 
-    @page {
-        margin: 10px;
+    html {margin-left: 15px;
+        font-size: 0.8rem;
     }
-    body {
-        margin: 10px;
-    }
-    table {
-        font-size: 0.85rem;
-    }
-    span {
+    td:nth-child(even) {
         padding-left: 2%;
+        border-left: 1px solid;
+    }
+    td:nth-child(odd) {
+        padding-left: 4%;
     }
 </style>
+
 <body>
+    <table>
+        <tbody>
+            <tr>
+                <!-- CLIPART -->
+                <td style="width: 24%;">
+                <p>__IMG__
+                    <div style="text-align: center;"><img src="public\img\face.svg" style="width: 150px;"></div>
+                </p>
+                </td>
 
-<table>
-    <tbody>
-        <tr>
-            <!-- CLIPART -->
-            <td style="width: 25%; border: 1px solid; padding-left: 1%;">
-                <div style="text-align: center;"><img src="public\img\face.svg" style="width: 150px;"></div>
-                <div style="margin: 0 auto; width: 90%; height: 5px; background-color: #000; margin-top:5%;"></div>
-            </td>
-
-            <!-- FORMATIONS -->
-            <td style="width: 75%; border: 1px solid; padding-left: 2%;">
-                <h2>Class Formations &#40;&#41; &#123; </h2>
+                <!-- FORMATIONS -->
+                <td style="width: 74%;">
+                    <h2>Class Formations &#123;</h2>
                     <p>
-                        &#91;   'annee'     =>'2020-2021',
-                            'diplome'   =>'Graduate Développeur Full-Stack',<br/>
-                            'firme'     =>'STUDI DIGITAL CAMPUS',
-                            'lieu'      =>'Remote 100%'
-                        &#93;,<br/>
-                        &#91;   'annee'     =>'1990-1992',
-                            'diplome'   =>'DUT Informatique',<br/>
-                            'firme'     =>'IUT PICARDIE JULES VERNE',
-                            'lieu'      =>'Amiens dpt-Somme'
-                        &#93;,<br/>
-                        &#91;   'annee'     =>'1988-1990',
-                            'diplome'   =>'BACCALAUREAT -H- informatique',<br/>
-                            'firme'     =>'LYCEE SAINT-PIERRE',
-                            'lieu'      =>'Fourmies Dpt-Nord'
-                        &#93;,<br/>
-                        &#91;   'annee'     =>'1986-1988',
-                            'diplome'   =>'BEP comptabilité',<br/>
-                            'firme'     =>'LYCEE PIERRE FOREST',
-                            'lieu'      =>'Maubeuge Dpt-Nord'
-                        &#93;
+                        &#91; année  =>  2020-2021 &#93;
+                        &#91; diplôme  =>  <b>Graduate Développeur Full-Stack</b> &#93;
+                        <br/>
+                        &#91;  .....  &#93;
+                        &#91; firme => STUDI DIGITAL CAMPUS &#93;
+                        &#91; lieu => Remote 100% &#93;
+                        <br/>
+                        &#91; année => 1990-1992 &#93;
+                        &#91; diplôme => <b>DUT Informatique</b> &#93;
+                        <br/>
+                        &#91;  .....  &#93;
+                        &#91; firme => IUT PICARDIE JULES VERNE &#93;
+                        &#91; lieu => Amiens dpt-Somme &#93;
+                        <br/>
+                        &#91; année => 1988-1990 &#93;
+                        &#91; diplôme => <b>BACCALAUREAT -H- informatique</b> &#93;
+                        <br/>
+                        &#91;  .....  &#93;
+                        &#91; firme => LYCEE SAINT-PIERRE &#93;
+                        &#91; lieu => Fourmies Dpt-Nord &#93;
+                        <br/>
+                        &#91; année => 1986-1988 &#93;
+                        &#91; diplôme => <b>BEP comptabilité</b> &#93;<br/>
+                        &#91;  .....  &#93;
+                        &#91; firme => LYCEE PIERRE FOREST &#93;
+                        &#91; lieu => Maubeuge Dpt-Nord &#93;
                     </p>
                 </td>
             </tr>
             
             <!-- 2 -->
             <tr>        
-            <!-- NAME -->
-            <td style="width: 25%; border: 1px solid; padding-left: 1%;">
-                <p>__NAMESPACE__</p>
-                <h1>François<br/>Couvé-Bonnaire</h1>
-                <div style="background-color: grey; text-align: end; padding: 2%; margin-right: 2%;"><img src="public\img\gentleman.png" style="width: 50px;">
-                <p style="vertical-align: center;">Développeur BACK</p>
-                </div>
-            </td>
-            <!-- TECHNOS -->
-            <td style="width: 75%; border: 1px solid; padding-left: 2%;">
-                <h2>protected function Backend&#40;&#41; &#123;</h2>
-                <p>
-                &#91;   'name'      =>'PHP',
-                    'level'     =>'Bases assmilées + POO + MVC.',
-                    'note'      =>'75'
-                    &#93;,<br/>
-                    &#91;   'name'      =>'MySQL',
-                    'level'     =>'Bases assimilées + CRUD.',
-                    'note'      =>'50'
-                &#93;
-                </p>
-                <!--  -->
-                <h2>protected function Frontend&#40;&#41; &#123;</h2>
-                <p>
-                &#91;   'name'      =>'HTML',
-                'level'     =>'Assimilé.',
-                    'note'      =>'100'
-                    &#93;,<br/>
-                    &#91;   'name'      =>'CSS',
-                    'level'     =>'Assimilé.',
-                    'note'      =>'100'
-                    &#93;,<br/>
-                    &#91;   'name'      =>'JS',
-                    'level'     =>'Bases assimilées.',
-                    'note'      =>'50'
-                    &#93;
-                </p>
-                <h2>protected function frameworks_and_Librairies&#40;&#41; &#123;</h2>
-                <p>  
-                &#91;   'name'      =>'SYMFONY',
-                    'level'     =>'En cours...',
-                    'note'      =>'25'
-                    &#93;,<br/>
-                    &#91;   'name'      =>'REACT + NODEJS',
-                    'level'     =>'Bientôt...',
-                    'note'      =>'25'
-                    &#93;,<br/>
-                    &#91;   'name'      =>'BOOTSTRAP',
-                    'level'     =>'Bases assimilées.',
-                    'note'      =>'75'
-                    &#93;,<br/>
-                    &#91;   'name'      =>'SASS',
-                    'level'     =>'Bases assimilées.',
-                    'note'      =>'50'
-                    &#93;
-                </p>
-                <!--  -->
-                <h2>public function gestion_de_versions&#40;&#41; &#123;</h2>
-                <p>  
-                    &#91;   'name'      =>'GITHUB',
-                    'level'     =>'Bases assimilées.',
-                    'note'      =>'50'
-                    &#93;
-                </p>
-            </td>
-        </tr> 
+                <!-- NAME -->
+                <td style="width: 24%;">
+                    <p>__NAMESPACE__</p>
+                    <h1>François<br/>Couvé-Bonnaire</h1>
+                </td>
+                <!-- TECHNOS -->
+                <td style="width: 74%;">
+                    <h2>protected function Backend&#40;&#41;  &#123;</h2>
+                    <p>
+                        &#91; name => <b>PHP</b> level => Bases assmilées + POO + MVC &#93;&#91; note => 75 &#93;
+                        <br/>
+                        &#91; name => <b>MySQL</b> level => Bases assimilées + CRUD &#93;&#91; note => 50 &#93;
+                    </p>
+                    <!--  -->
+                    <h2>protected function Frontend&#40;&#41;  &#123;</h2>
+                    <p>
+                        &#91; name => <b>HTML</b> level => Assimilé  &#93;&#91; note => 100 &#93;
+                        <br/>
+                        &#91; name => <b>CSS</b> level => Assimilé  &#93;&#91; note => 100 &#93;
+                        <br/>
+                        &#91; name => <b>JS</b> level => Bases assimilées &#93;&#91; note => 50 &#93;
+                    </p>
+                
+                </td>
+            </tr> 
+            <tr>        
+                <!-- NAME -->
+                <td style="width: 24%;">
+                    <div style="text-align: right;"><img src="public\img\gentleman.png" style="width: 50px;">
+                        <p>Développeur BACK</p>
+                    </div>
+                </td>
+                <!-- TECHNOS -->
+                <td style="width: 74%;">
+                    <h2>protected function frameworks_and_Librairies&#40;&#41; &#123;</h2>
+                    <p>  
+                        &#91; name => SYMFONY level => En cours &#93;&#91; note => 25 &#93;
+                        <br/>
+                        &#91; name => REACT + NODEJS level => Bientôt &#93;&#91; note => 25 &#93;
+                        <br/>
+                        &#91; name => BOOTSTRAP level => Bases assimilées &#93;&#91; note => 75 &#93;
+                        <br/>
+                        &#91; name => SASS level => Bases assimilées &#93;&#91; note => 50 &#93;
+                    </p>
+                    <!--  -->
+                    <h2>public function gestion_de_versions&#40;&#41;  &#123;</h2>
+                    <p>  
+                        &#91; name => GITHUB level => Bases assimilées &#93;&#91; note => 50 &#93;
+                    </p>
+                </td>
+            </tr> 
         
-        <!-- 3 -->
-        <tr>
-            <!-- PROFIL -->
-            <td style="width: 25%; border: 1px solid; padding-left: 1%;">
-                <p>__FILE__</p>
-                <p>
-                    Atypique! Celui d'un 'jeune' DEV au demi-siècle passé mais d'une motivation à toutes épreuves!<br/>
-                    La soif d'apprendre et de collaborer au sein d'une équipe professionnelle.<br/>Formez-moi un peu plus et je vous le rendrai au centuple.<br/>
-                    Mes expériences profesionnelles hors "Dev" vous garantissent de m'acclimater, comprendre et évoluer rapidement.
-                </p>
-            </td>
-            <!-- FORMATIONS -->
-            <td style="width: 75%; border: 1px solid; padding-left: 2%;">
-                <h2>public static function __construct</h2>
-                <p>
-                    &#91;   'annee'     =>  '2008-2020',
-                    'firme'     =>  'Hypermarché Géant CASINO',<br/>
-                    'lieu'      =>  'Albertville Dpt-Savoie.',
-                    'poste'     =>  'Manager produits frais'
-                    &#93;,<br/>
-                    &#91;   'annee'     =>  '2005-2008',
-                    'firme'     =>  'ALDI marché',<br/>
-                    'lieu'      =>  'Hautmont Dpt-Nord.',
-                    'poste'     =>  'Responsable magasin'
-                    &#93;,<br/>
-                    &#91;   'annee'     =>  '2000-2005',
-                    'firme'     =>  'Habitat Du Nord immobilier',<br/>
-                    'lieu'      =>  'Maubeuge Dpt-Nord.',
-                    'poste'     =>  'Chargé d\'ordonnancement'
-                    &#93;,<br/>
-                &#91;   'annee'     =>  '1995-2000',
-                'firme'     =>  'QUICK restaurant',<br/>
-                'lieu'      =>  'Hautmont Dpt-Nord.',
-                'poste'     =>  'Manager'
-                &#93;
-                </p>
-            </td>
-        </tr>
-        <!-- 4 -->
-        <tr>
-            <!-- ADRESS -->
-            <td style="width: 25%; border: 1px solid; padding-left: 1%;">
-                    <img src="public\img\phone.svg" style="width: 25px;"><span>06-70-92-03-28</span><br/>
-                    <img src="public\img\email.svg" style="width: 25px;"><span>fcbonnaire01@gmail.com</span><br/>
-                    <img src="public\img\adresse.svg" style="width: 25px;"><span>150 rue Jean SIBUET 73460 SAINT-VITAL</span><br/>
-            </td>
-            
-            <!-- VIE PRIVEE -->
-            <td style="width: 75%; border: 1px solid; padding-left: 2%;">
-                <h2>class Vie_Privee</h2>
-                <p>
-                    &#91;   'libelle'   => 'Marié, père de 4 enfants et bientot grand-père !!!' &#93;,<br/>
-                    &#91;   'libelle'   => 'Passionné de musiques, tous styles et pratique la guitare occasionnellement.',  &#93;,<br/>
-                    &#91;   'libelle'   => 'Pratique hebdomadaire de la course à pied, trail ou rando, du badminton en club et un peu de ski l\'hiver!' &#93;
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
+            <!-- 3 -->
+            <tr>
+                <!-- PROFIL -->
+                <td style="width: 24%;">
+                    <p>__FILE__</p>
+                    <p>
+                        Atypique! Celui dun jeune DEV au demi-siècle passé mais dune motivation à toutes épreuves!<br/>
+                        La soif dapprendre et de collaborer au sein dune équipe professionnelle.<br/>Formez-moi un peu plus et je vous le rendrai au centuple.<br/>
+                        Mes expériences profesionnelles hors "Dev" vous garantissent de macclimater comprendre et évoluer rapidement.
+                    </p>
+                </td>
+                <!-- FORMATIONS -->
+                <td style="width: 74%;">
+                    <h2>Class Professional_Experience &#123;</h2>
+                    <h2>public function __construct &#40;&#41;  &#123;</h2>
+                    <p>                        
+                        &#91; année => 2008-2020 firme => Hypermarché Géant CASINO
+                        <br/>
+                        &#91;  .....  &#93;
+                        lieu => Albertville Dpt-Savoie.
+                        poste => Manager produits frais
+                        &#93;
+                        <br/>
+                        &#91; année => 2005-2008 firme => ALDI marché
+                        <br/>
+                        &#91;  .....  &#93;
+                        lieu => Hautmont Dpt-Nord.
+                        poste => Responsable magasin
+                        &#93;
+                        <br/>
+                        &#91; année => 2000-2005 firme => Habitat Du Nord immobilier
+                        <br/>
+                        &#91;  .....  &#93;
+                        lieu => Maubeuge Dpt-Nord.
+                        poste => Chargé d\ordonnancement
+                        &#93;
+                        <br/>
+                        &#91; année => 1995-2000 firme  => QUICK restaurant
+                        <br/>
+                        &#91;  .....  &#93;
+                        lieu => Hautmont Dpt-Nord.
+                        poste => Manager
+                        &#93;
+                    </p>
+                </td>
+            </tr>
+            <!-- 4 -->
+            <tr>
+                <!-- ADRESS -->
+                <td style="width: 24%;">
+                <p>__SERVER_ADDR__</p>
+                        <p><img src="public\img\phone.svg" style="width: 25px;">&emsp;06 70 92 03 28</p>
+                        <p><img src="public\img\email.svg" style="width: 25px;">&emsp;fcbonnaire01@gmail.com</p>
+                        <p><img src="public\img\adresse.svg" style="width: 25px;">&emsp;150 rue Jean SIBUET 73460 SAINT-VITAL</p>
+                </td>
+                
+                <!-- VIE PRIVEE -->
+                <td style="width: 74%;">
+                    <h2>class Admin extends Childs &#123;</h2>
+                    <p>
+                        &#91; libellé => Marié père de 4 enfants et bientot grand-père !!! &#93;<br/>
+                        &#91; libellé => Passionné de musiques tous styles et pratique la guitare occasionnellement. &#93;<br/>
+                        &#91; libellé => Pratique hebdomadaire de la course à pied trail et rando. &#93;<br/>
+                        &#91; libellé => Badminton en club et un peu de ski l\hiver! &#93;
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
