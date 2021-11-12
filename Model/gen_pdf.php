@@ -4,7 +4,8 @@ session_start();
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
-require_once './dompdf/autoload.inc.php';
+// require_once './dompdf/autoload.inc.php';
+require_once 'Vendor/dompdf/autoload.inc.php';
 
 $dompdf     = new Dompdf(); // appel la Class création nouveau fichier.pdf
 $options    = new Options(); // appel la Class des options
@@ -18,7 +19,7 @@ $dompdf     = new Dompdf($options);
 
 
 ob_start();
-require_once 'index.php';
+require_once 'View\cv_pdf_view.php';
 $html = ob_get_contents();
 ob_end_clean();
 

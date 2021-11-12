@@ -1,6 +1,6 @@
 <?php
-    require 'Class\dataBase.php';
-    require 'text_cv.php';
+    require 'Model\Class\DataBase.php';
+    require 'Model\Class\Text_cv.php';
     ?>
 <!-- <style></style> -->
 <!DOCTYPE html>

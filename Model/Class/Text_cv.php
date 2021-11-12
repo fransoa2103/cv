@@ -1,6 +1,6 @@
 <?php
 function displayMyCV($svg, $section){
-    require 'Class\dataBase.php';
+    require 'Model\Class\DataBase.php';
     echo "<h2>".strtoupper($section)."</h2>";
     displayText($db[$section], $section);
     echo $section != 'vie-privee' ? "<hr>" : "";
