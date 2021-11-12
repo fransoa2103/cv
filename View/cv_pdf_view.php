@@ -24,8 +24,8 @@
                 </td>
 
                 <!-- FORMATIONS -->
-                <td style="width: 74%;">
-                    <h2>Class Formations &#123;</h2>
+                <td style="width: 74%; border-bottom: 1px solid;">
+                    <h2>class Formations &#123;</h2>
                     <p>
                         &#91; année  =>  2020-2021 &#93;
                         &#91; diplôme  =>  <b>Graduate Développeur Full-Stack</b> &#93;
@@ -66,14 +66,14 @@
                 </td>
                 <!-- TECHNOS -->
                 <td style="width: 74%;">
-                    <h2>protected function Backend&#40;&#41;  &#123;</h2>
+                    <h2>protected function back&#40;&#41;  &#123;</h2>
                     <p>
                         &#91; name => <b>PHP</b> level => Bases assmilées + POO + MVC &#93;&#91; note => 75 &#93;
                         <br/>
                         &#91; name => <b>MySQL</b> level => Bases assimilées + CRUD &#93;&#91; note => 50 &#93;
                     </p>
                     <!--  -->
-                    <h2>protected function Frontend&#40;&#41;  &#123;</h2>
+                    <h2>protected function front&#40;&#41;  &#123;</h2>
                     <p>
                         &#91; name => <b>HTML</b> level => Assimilé  &#93;&#91; note => 100 &#93;
                         <br/>
@@ -87,13 +87,13 @@
             <tr>        
                 <!-- NAME -->
                 <td style="width: 24%;">
-                    <div style="text-align: right;"><img src="public\img\gentleman.png" style="width: 50px;">
+                    <div style="text-align: center;"><img src="public\img\gentleman.png" style="width: 50px;">
                         <p>Développeur BACK</p>
                     </div>
                 </td>
                 <!-- TECHNOS -->
-                <td style="width: 74%;">
-                    <h2>protected function frameworks_and_Librairies&#40;&#41; &#123;</h2>
+                <td style="width: 74%; border-bottom: 1px solid;">
+                    <h2>protected function frameworks_librairies&#40;&#41; &#123;</h2>
                     <p>  
                         &#91; name => <b>SYMFONY</b> level => En cours &#93;&#91; note => 25 &#93;
                         <br/>
@@ -123,8 +123,7 @@
                     </p>
                 </td>
                 <!-- FORMATIONS -->
-                <td style="width: 74%;">
-                    <h2>Class Professional_Experience &#123;</h2>
+                <td style="width: 74%; border-bottom: 1px solid;">
                     <h2>public function __construct &#40;&#41;  &#123;</h2>
                     <p>                        
                         &#91; année => 2008-2020 firme => Hypermarché Géant CASINO

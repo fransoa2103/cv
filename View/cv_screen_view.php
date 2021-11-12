@@ -24,7 +24,7 @@
                 <!-- F-LETTER -->
                 <div class="letter">
                     <div class="ligne"></div>
-                    <div class="" ><img src="public\img\clip-art.png" class="clipart"></div>
+                    <div style="text-align: center;" ><img src="public\img\face.svg" class="clipart"></div>
                     <div class="ligne"></div>
                 </div>
                 <!-- NAME -->
