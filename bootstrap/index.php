@@ -14,10 +14,10 @@
         <title>CV ~ François Couvé-Bonnaire</title>
         <link rel="icon" href="public\img\thumb.svg"/>
     </head>
-    <body>
+    <body class="">
         <main class="container d-lg-flex">
             <!-- LEFT SECTION -->
-            <section class="left bg-primary  text-light d-flex flex-column justify-content-between">
+            <section class="left bg-primary text-light d-flex flex-column justify-content-between">
                 <!-- F-LETTER -->
                 <div class="">
                     <div class="ligne mt-3 pt-2 bg-light mx-3"></div>
@@ -64,7 +64,7 @@
             <hr class="d-lg-none border border-primary">
             <section class="right">
                 <!-- TECHNOS -->
-                    <ul class="list-group mb-2  text-dark" >
+                    <ul class="list-group mb-2  text-dark border border-primary" >
                         <li class="list-group-item active ">
                             <i class="ms-2 fs-3 fab fa-dev"></i>
                             <span class="ms-2">TECHNOS</span>
@@ -90,7 +90,7 @@
                         </div>
                     </ul>
                 <!-- STUDY -->
-                    <ul class="list-group ">
+                    <ul class="list-group mb-2 border border-primary">
                         <li class="list-group-item active">
                             <i class="ms-2 fas fa-user-graduate"></i>
                             <span class="ms-2">FORMATIONS</span>
@@ -108,7 +108,7 @@
                         }?>
                     </ul>
                 <!-- EXPERIENCES -->
-                    <ul class="list-group">
+                    <ul class="list-group mb-2 border border-primary">
                         <li class="list-group-item active fw-bold">
                             <i class="ms-2 fas fa-user-tie"></i>
                             <span class="ms-2">EXPERIENCES</span>
@@ -126,7 +126,7 @@
                         }?>
                     </ul>
                 <!-- VIE PRIVEE -->
-                    <ul class="list-group">
+                    <ul class="list-group mb-2 border border-primary">
                         <li class="list-group-item active fw-bold">
                             <i class="ms-2 fas fa-home"></i>
                             <span class="ms-2 text-uppercase">vie privée</span>
@@ -143,7 +143,7 @@
                     </ul>
                 
                 <!-- LIENS -->
-                <hr class="border border-primary">
+                <!-- <hr class="border border-primary"> -->
                 <ul class="liens">
                     <?php
                     foreach($db['liens'] as $lien){
