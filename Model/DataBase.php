@@ -1,5 +1,12 @@
 <?php
 $db = [
+        'icons' => [
+            [  'formations'    =>'fas fa-user-graduate',
+               'technos'       =>'fab fa-dev',
+               'experiences'   =>'fas fa-user-tie',
+               'vie-privee'    =>'fas fa-home'
+            ]
+        ],
         'formations' => [
             [   'annee'     =>'2020-2021',
                 'diplome'   =>'Graduate Développeur Full-Stack',
@@ -25,97 +32,97 @@ $db = [
 
         'technos' => [
                 'back' =>
-                [   ['title' =>'__BACK__'],
-                    [   'name'      =>'PHP',
+                [   [   'title'     =>'__BACK__',
                         'icon'      =>'fab fa-php',
+                        'name'      =>'PHP',
                         'level'     =>'Bases assmilées + POO + MVC.',
-                        'note'      =>'75'
+                        'note'      =>'70'
                     ],
-                    [   'name'      =>'MySQL',
-                        'icon'      =>'fas fa-database',
+                    [   'icon'      =>'fas fa-database',
+                        'name'      =>'MySQL',
                         'level'     =>'Bases assimilées + CRUD.',
                         'note'      =>'50'
                     ]
                 ],
                 'front' =>
-                [   ['title' =>'__FRONT__'],
-                    [   'name'      =>'HTML',
+                [   [   'title'     =>'__FRONT__',
                         'icon'      =>'fab fa-html5',
+                        'name'      =>'HTML',
                         'level'     =>'Assimilé.',
-                        'note'      =>'100'
+                        'note'      =>'99'
                     ],
-                    [   'name'      =>'CSS',
-                        'icon'      =>'fab fa-css3-alt',
+                    [   'icon'      =>'fab fa-css3-alt',
+                        'name'      =>'CSS',
                         'level'     =>'Assimilé.',
-                        'note'      =>'100'
+                        'note'      =>'99'
                     ],
-                    [   'name'      =>'JS',
-                        'icon'      =>'fab fa-js',
+                    [  'icon'      =>'fab fa-js',
+                        'name'      =>'JS',
                         'level'     =>'Bases assimilées.',
-                        'note'      =>'50'
+                        'note'      =>'60'
                     ]
                 ],    
             'frameworks & Librairies' =>
-                [   ['title' =>'__FRAMEWORKS & LIBRAIRIES__'],
-                    [   'name'      =>'SYMFONY',
+                [   [   'title'     =>'__FRAMEWORKS & LIBRAIRIES__',
                         'icon'      =>'fab fa-symfony',
+                        'name'      =>'SYMFONY',
                         'level'     =>'En cours...',
-                        'note'      =>'25'
+                        'note'      =>'0'
                     ],
-                    [   'name'      =>'REACT + NODEJS',
-                        'icon'      =>'fab fa-react',
+                    [   'icon'      =>'fab fa-react',
+                        'name'      =>'REACT + NODEJS',
                         'level'     =>'Bientôt...',
-                        'note'      =>'25'
+                        'note'      =>'0'
                     ],
-                    [   'name'      =>'BOOTSTRAP',
-                        'icon'      =>'fab fa-bootstrap',
+                    [   'icon'      =>'fab fa-bootstrap',
+                        'name'      =>'BOOTSTRAP',
                         'level'     =>'Bases assimilées.',
-                        'note'      =>'75'
+                        'note'      =>'70'
                     ],
-                    [   'name'      =>'SASS',
-                        'icon'      =>'fab fa-sass',
+                    [   'icon'      =>'fab fa-sass',
+                        'name'      =>'SASS',
                         'level'     =>'Bases assimilées.',
-                        'note'      =>'50'
+                        'note'      =>'60'
                     ]
                 ],
             'gestionnaire versions' =>
-                [   ['title' =>'__GESTIONNAIRE DE VERSIONS__'],
-                       ['name'      =>'GITHUB',
+                [   [   'title'     =>'__GESTIONNAIRE DE VERSIONS__',
                         'icon'      =>'fab fa-github',
+                        'name'      =>'GITHUB',
                         'level'     =>'Bases assimilées.',
                         'note'      =>'50'
                     ]
                 ],
             'CMS' =>
-                [   ['title' =>'__CMS__'],
-                    [   'name'      =>'WORDPRESS',
+                [   [   'title'     =>'__CMS__',
                         'icon'      =>'fab fa-wordpress',
+                        'name'      =>'WORDPRESS',
                         'level'     =>'Bases assimilées.',
-                        'note'      =>'50'
+                        'note'      =>'60',
                     ]
                 ]
             ],
 
         'experiences' =>  [
             [   'annee'     =>  '2008-2020',
+                'poste'     =>  'Manager produits frais',
                 'firme'     =>  'Hypermarché Géant CASINO',
-                'lieu'      =>  'Albertville Dpt-Savoie.',
-                'poste'     =>  'Manager produits frais'
+                'lieu'      =>  'Albertville Dpt-Savoie.'
             ],
             [   'annee'     =>  '2005-2008',
+                'poste'     =>  'Responsable magasin',
                 'firme'     =>  'ALDI marché',
-                'lieu'      =>  'Hautmont Dpt-Nord.',
-                'poste'     =>  'Responsable magasin'
+                'lieu'      =>  'Hautmont Dpt-Nord.'
             ],
             [   'annee'     =>  '2000-2005',
+                'poste'     =>  'Chargé d\'ordonnancement',
                 'firme'     =>  'Habitat Du Nord immobilier',
-                'lieu'      =>  'Maubeuge Dpt-Nord.',
-                'poste'     =>  'Chargé d\'ordonnancement'
+                'lieu'      =>  'Maubeuge Dpt-Nord.'
             ],
             [   'annee'     =>  '1995-2000',
+                'poste'     =>  'Manager',
                 'firme'     =>  'QUICK restaurant',
-                'lieu'      =>  'Hautmont Dpt-Nord.',
-                'poste'     =>  'Manager'
+                'lieu'      =>  'Hautmont Dpt-Nord.'
             ]
         ],
         'vie-privee' =>  [
@@ -123,10 +130,13 @@ $db = [
                 'libelle'   => 'Marié, père de 4 enfants et bientot grand-père !!!'
             ],
             [   'icon'      => 'fas fa-music',
-                'libelle'   => 'Passionné de musiques, tous styles et pratique la guitare occasionnellement.',
+                'libelle'   => 'Passionné de musiques, tous styles et gratte occasionnellement.',
             ],
             [   'icon'      => 'fas fa-running',
-                'libelle'   => 'Pratique hebdomadaire de la course à pied, trail ou rando, du badminton en club et un peu de ski l\'hiver!'
+                'libelle'   => 'Pratique hebdomadaire de la course à pied, trail/rando.'
+            ],
+            [   'icon'      => 'fas fa-cubes',
+                'libelle'   => 'Badminton en club, ski l\'hiver et Rubik\'s cube!'
             ]
         ],
         'liens' =>  [

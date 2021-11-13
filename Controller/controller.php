@@ -1,11 +1,15 @@
 <?php
 
-function page_1(){
-    require 'View\page_1.php';
+function main(){
+    require 'View\accueil.php';
 }
-function page_2(){
-    require 'View\cv_screen_view.php';
-}
-function page_3(){
+
+function cv_pdf(){
     require 'Model\gen_pdf.php';
+}
+
+function cv_bootstrap(){
+    require 'Model\Text_cv.php';
+    require 'View\cv_bootstrap_view.php';
+
 }

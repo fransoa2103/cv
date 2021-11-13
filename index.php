@@ -3,10 +3,10 @@ require_once 'Controller\controller.php';
 try {
     if(isset($_GET['page'])){
         switch ($_GET['page']){
-            case 'index.php' : page_1(); break;
-            case 'cv.php' : page_2(); break;
-            case 'pdf.php' : page_3(); break;
-            default : page_1();
+            case 'index.php' : main(); break;
+            case 'pdf.php' : cv_pdf(); break;
+            case 'bs.php' : cv_bootstrap(); break;
+            default : main();
         }
     }
     else {

@@ -1,5 +1,4 @@
 <style>
-
     html {margin-left: 15px;
         font-size: 0.8rem;
     }
@@ -19,7 +18,7 @@
                 <!-- CLIPART -->
                 <td style="width: 24%;">
                 <p>__IMG__
-                    <div style="text-align: center;"><img src="public\img\face.svg" style="width: 150px;"></div>
+                    <div style="text-align: center;"><img src="public\img\cv_pdf\face.svg" style="width: 150px;"></div>
                 </p>
                 </td>
 
@@ -87,7 +86,7 @@
             <tr>        
                 <!-- NAME -->
                 <td style="width: 24%;">
-                    <div style="text-align: center;"><img src="public\img\gentleman.png" style="width: 50px;">
+                    <div style="text-align: center;"><img src="public\img\cv_pdf\gentleman.png" style="width: 50px;">
                         <p>Développeur BACK</p>
                     </div>
                 </td>
@@ -117,9 +116,9 @@
                 <td style="width: 24%;">
                     <p>__FILE__</p>
                     <p>
-                        Atypique! Celui dun jeune DEV au demi-siècle passé mais dune motivation hors pair!<br/>
-                        La soif dapprendre et de collaborer au sein d'une équipe professionnelle.<br/>Formez-moi encore un peu plus et je vous le rendrai au centuple.<br/>
-                        Mes expériences passées, hors "Dev", vous garantissent de m'acclimater comprendre et évoluer rapidement.
+                        Atypique! Celui d'un 'jeune' DEV au demi-siècle passé mais d'une motivation hors-pair!
+                        La soif d'apprendre et de collaborer au sein d'une équipe professionnelle. Formez-moi encore un peu plus et je vous le rendrai au centuple.
+                        Mon tempérament et mes expériences hors "Dev", vous garantissent de m'intégrer et évoluer avec vous rapidement.
                     </p>
                 </td>
                 <!-- FORMATIONS -->
@@ -161,9 +160,9 @@
                 <!-- ADRESS -->
                 <td style="width: 24%;">
                 <p>__SERVER_ADDR__</p>
-                        <p><img src="public\img\phone.svg" style="width: 25px;">&emsp;06 70 92 03 28</p>
-                        <p><img src="public\img\email.svg" style="width: 25px;">&emsp;fcbonnaire01@gmail.com</p>
-                        <p><img src="public\img\adresse.svg" style="width: 25px;">&emsp;150 rue Jean SIBUET 73460 SAINT-VITAL</p>
+                        <p><img src="public\img\cv_pdf\phone.svg"   style="width: 25px;">&emsp;06 70 92 03 28</p>
+                        <p><img src="public\img\cv_pdf\email.svg"   style="width: 25px;">&emsp;fcbonnaire01@gmail.com</p>
+                        <p><img src="public\img\cv_pdf\adresse.svg" style="width: 25px;">&emsp;150 rue Jean SIBUET 73460 SAINT-VITAL</p>
                 </td>
                 
                 <!-- VIE PRIVEE -->

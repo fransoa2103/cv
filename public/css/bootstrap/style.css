@@ -1,0 +1,72 @@
+
+html {
+    font-size: 1rem;
+}
+ul, li {
+    list-style: none;
+}
+.f_letter {
+    width: 100%;
+    max-width: 100%;
+}
+.ligne {
+    height:     10px;
+}
+address, .name, .profil {
+    padding: 150px 0 0 0;
+    margin: 0;
+}
+.liens span {
+    font-size: 2rem;
+}
+.progress {
+    background-color: #98bce9;
+    /* background-color: #ea3f3b; */
+    /* background-color: #fd7e14; */
+}
+@media screen and (max-width: 768px) {
+    address, .name, .profil {
+        padding: 10px 0 0 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .right, .left {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .left {
+        min-width: 30%;
+    }
+    .right {
+        min-width: 70%;
+        margin-left: 1%;
+    }
+    .right, .left {
+        font-size: 1.3rem;
+    }
+    ul {
+        max-width: 75%;
+    }
+}
+
+@media print {
+    
+    html {
+        font-size: 0.60rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .f_letter, .liens{
+        display: none;
+    }
+    .right ul {
+        width: 9cm;
+    }
+    address, .name, .profil {
+        padding-top: 0;
+    }
+}
